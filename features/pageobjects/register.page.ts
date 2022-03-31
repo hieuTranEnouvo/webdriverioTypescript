@@ -1,4 +1,4 @@
-import { click, selectDropdown, selectVisibleText, setText } from '../common/commands';
+import { clickElement, selectDropdown, selectVisibleText, setText } from '../common/commands';
 import Page from './page'
 import registerPageUI from '../interfaces/registerPageUI'
 
@@ -41,7 +41,7 @@ class RegisterPage extends Page {
     }
 
     async clickOnSubmitBtn() {
-        await click(registerPageUI.submit_btn)
+        await clickElement(registerPageUI.submit_btn)
     }
 
 }

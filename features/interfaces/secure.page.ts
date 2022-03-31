@@ -1,6 +1,6 @@
 import { ChainablePromiseElement } from 'webdriverio';
 
-import Page from '../pages/page';
+import Page from '../pageobjects/page';
 
 /**
  * sub page containing specific selectors and methods for a specific page

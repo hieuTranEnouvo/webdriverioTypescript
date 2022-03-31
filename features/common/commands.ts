@@ -28,7 +28,7 @@ export const selectVisibleText = async(elem:  ChainablePromiseElement<Promise<We
     addLog(`Selected by visible text: ${text}`)
 }
 
-export const click = async(elem: ChainablePromiseElement<Promise<WebdriverIO.Element>>) => {
+export const clickElement = async(elem: ChainablePromiseElement<Promise<WebdriverIO.Element>>) => {
     await elem.click()
     addLog(`Clicked on element: ${await elem.selector}`)
 }
